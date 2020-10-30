@@ -1,3 +1,0 @@
-30-Oct-20 23:17:06 PM 715- 1387 -INFO - [NODE-us_east-127.0.0.1:8080] Successfully added to Node Manager
-30-Oct-20 23:17:06 PM 715- 1387 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (1/inf)...
-30-Oct-20 23:17:07 PM 281- 1387 -WARNING - [NODE-us_east-127.0.0.1:8080] Authentication failed while trying to establish a connection to the node.
