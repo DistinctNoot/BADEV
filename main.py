@@ -3,6 +3,8 @@ import logging
 import datetime
 import os
 import sys
+import subprocess
+import time
 from discord.ext import commands
 from keep_alive import keep_alive
 
@@ -12,6 +14,9 @@ intents = discord.Intents.default()
 
 
 client = commands.Bot(command_prefix="bd!", help_command=None, intents=intents.all())
+
+subprocess.Popen(['java', '-jar', 'Lavalink.jar'])
+time.sleep(40)
 
 
 @client.event
