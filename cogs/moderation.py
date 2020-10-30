@@ -124,6 +124,19 @@ class moderation(commands.Cog):
 	  em.set_footer(icon_url=user.avatar_url, text="British Airways Coding")
 	  await channel.send(embed=em)
 
+  @commands.command()
+  async def verify(self, ctx):
+	  role = discord.utils.get(ctx.guild.roles, id=769429653873360930)
+	  role2 = discord.utils.get(ctx.guild.roles, id=771868207408873492)
+
+	  if role in ctx.author.roles:
+		  await ctx.send("You already verified!")
+	  else:
+		  await ctx.send("Welcome to the server!")
+		  await ctx.author.add_roles(role)
+		  await ctx.author.remove_roles(role2)
+
+
 def setup(client):
     client.add_cog(moderation(client))
     return

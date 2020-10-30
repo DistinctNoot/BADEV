@@ -8,10 +8,11 @@ class others(commands.Cog):
   @commands.Cog.listener()
   async def on_member_join(self, member):
     if member.guild.id == 745144764575252520:
-        var1 = discord.utils.get(member.guild.roles, name = "Visitor")
+        var1 = discord.utils.get(member.guild.roles, id = 771868207408873492)
         channel = self.client.get_channel(745144764575252523)
         channel1 =self.client.get_channel(769367869548003379)
         channel2 = self.client.get_channel(769367361920696340)
+        channel3 = self.client.get_channel(771870733235781642)
         await member.add_roles(var1)
         await channel.send(
 f"""
@@ -22,6 +23,7 @@ f"""
 **Status?:** {member.status}
 **ID?:** {member.id}
 Hmmm seems like you passed the test
+to view and send messages make sure to verify in {channel3.mention} and
 Make sure to check out {channel1.mention} to learn
 what's good and bad here
 And check out {channel2.mention} for 
