@@ -30,12 +30,10 @@ awesome updates on our bot
       )
     elif member.guild.id == 707183075624353952:
         var1 = discord.utils.get(member.guild.roles, id = 717681307483635722)
-        channel = self.client.get_channel(727195026542559247)
-        channel1 = self.client.get_channel(712712583718895687)
-        channel2 = self.client.get_channel(712955612467691520)
+        channel = self.client.get_channel(758093741801078954)
         await channel.send(
 f"""
-Welcome to {member.guild.name} {member.mention}
+Welcome to {member.guild.name} {member.name}
 Let's run some quick tests first.
 **Are you a bot?:** {member.bot}
 **When did you become alive?: **""" + member.created_at.strftime('%a, %#d %B %Y, %I:%M %p') +
@@ -43,12 +41,6 @@ Let's run some quick tests first.
 f"""
 **Status?:** {member.status}
 **ID?:** {member.id}
-Seems like you passed the test.
-Make sure to check out {channel1.mention}
-to stay up to date with what's happens
-and check out {channel2.mention} to learn
-what's good and bad here.
-**British Airways to fly to serve**
 
 """
 		)
