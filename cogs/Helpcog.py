@@ -19,7 +19,7 @@ class Helpcog(commands.Cog):
 		  await ctx.send("Help page not found.")
   
 async def helpreg(ctx):
-      em = discord.Embed(title="BADEV's Developers tools!", description="Our normal commands", url="https://github.com/DistinctNoot/BADEV", color=0x9E0B0B)
+      em = discord.Embed(title="BADEV's help list", description="Our normal commands", url="https://github.com/DistinctNoot/BADEV", color=0x9E0B0B)
       em.add_field(name="Moderation commands", value="Moderation commands")
       em.add_field(name="Developers commands", value="Commands for the Develoeprs")
       em.add_field(name="Fun commands", value="Commands for having fun!")
