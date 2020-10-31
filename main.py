@@ -44,7 +44,6 @@ async def on_ready():
 	        type=discord.ActivityType.watching,
 	        name=f'over British Airways Coding!'))
     print('Bot Started')
-
     for filename in os.listdir('./cogs'):
 	    if filename.endswith('.py'):
 		    client.load_extension(f'cogs.{filename[:-3]}')
@@ -55,6 +54,17 @@ async def on_ready():
       print(i)
       testlist.append(i.name)
     print(testlist)
+
+
+
+@client.command()
+@commands.has_role("Bot developer")
+async def unload(ctx):
+	for filename in os.listdir('./cogs'):
+	    if filename.endswith('.py'):
+		    client.unload_extension(f'cogs.{filename[:-3]}')
+		    print(f'unloading {filename}')
+	    await ctx.send(f"Unloaded {filename}")
 
 keep_alive()
 client.run(os.getenv("DISCORD_TOKEN"))
