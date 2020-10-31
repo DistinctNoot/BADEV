@@ -2,3 +2,5 @@
 poetry.lock
 pyproject.toml 
 log.txt
+/logs/
+spring.log
