@@ -1,12 +1,5 @@
-31-Oct-20 02:20:19 AM 805- 1664 -INFO - [NODE-us_east-127.0.0.1:8080] Successfully added to Node Manager
-31-Oct-20 02:20:19 AM 857- 1664 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (1/inf)...
-31-Oct-20 02:20:19 AM 865- 1664 -INFO - 127.0.0.1 - - [31/Oct/2020 02:20:19] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 02:20:19 AM 869- 1664 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
-31-Oct-20 02:20:29 AM 876- 1664 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (2/inf)...
-31-Oct-20 02:20:29 AM 879- 1664 -INFO - 127.0.0.1 - - [31/Oct/2020 02:20:29] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 02:20:29 AM 881- 1664 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
-31-Oct-20 02:20:49 AM 891- 1664 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (3/inf)...
-31-Oct-20 02:20:49 AM 900- 1664 -INFO - 127.0.0.1 - - [31/Oct/2020 02:20:49] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 02:20:49 AM 901- 1664 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
-31-Oct-20 02:21:16 AM 428- 1664 -INFO - 172.18.0.1 - - [31/Oct/2020 02:21:16] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 02:21:19 AM 907- 1664 -WARNING - [NODE-us_east-127.0.0.1:8080] A WebSocket connection could not be established within 3 attempts.
+31-Oct-20 04:17:53 AM 72- 3658 -INFO - [NODE-us_east-127.0.0.1:8080] Successfully added to Node Manager
+31-Oct-20 04:17:53 AM 101- 3658 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (1/inf)...
+31-Oct-20 04:17:54 AM 607- 3658 -INFO - [NODE-us_east-127.0.0.1:8080] Successfully established connection
+31-Oct-20 04:18:03 AM 938- 3658 -INFO - 172.18.0.1 - - [31/Oct/2020 04:18:03] "[37mGET / HTTP/1.1[0m" 200 -
+31-Oct-20 04:18:12 AM 856- 3658 -INFO - 172.18.0.1 - - [31/Oct/2020 04:18:12] "[37mGET / HTTP/1.1[0m" 200 -
