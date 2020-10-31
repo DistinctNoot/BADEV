@@ -272,3 +272,44 @@
 2020-10-31 04:17:55.017  INFO 3682 --- [XNIO-1 task-1] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:36738
 2020-10-31 04:17:55.284  INFO 3682 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : {"op": "configureResuming", "key": "default-node", "timeout": 60}
 2020-10-31 04:19:42.441  WARN 3682 --- [lava-daemon-pool-manager-3-thread-1] c.s.d.l.tools.GarbageCollectionMonitor   : Suspicious GC results for the last 2 minutes: [Bucket 0 = 7] [Bucket 20 = 3] [Bucket 50 = 2] [Bucket 200 = 1] [Bucket 500 = 0] [Bucket 2000 = 0] 
+2020-10-31 04:28:12.711  INFO 3682 --- [XNIO-1 I/O-1] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:36738 with status CloseStatus[code=1006, reason=] -- Session can be resumed within the next 60 seconds with key default-node
+2020-10-31 04:28:12.745  INFO 3682 --- [Thread-1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-31 04:28:12.756  INFO 3682 --- [Thread-1] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring disabled.
+2020-10-31 04:28:12.772  INFO 3682 --- [Thread-1] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-10-31 04:28:27.653  INFO 4050 --- [main] lavalink.server.Launcher                 : 
+
+[32m       .  [31m _                  _ _       _    [32m__ _ _
+[32m      /\\ [31m| | __ ___   ____ _| (_)_ __ | | __[32m\ \ \ \
+[32m     ( ( )[31m| |/ _` \ \ / / _` | | | '_ \| |/ /[32m \ \ \ \
+[32m      \\/ [31m| | (_| |\ V / (_| | | | | | |   < [32m  ) ) ) )
+[32m       '  [31m|_|\__,_| \_/ \__,_|_|_|_| |_|_|\_\[32m / / / /
+[0m    =========================================[32m/_/_/_/[0m
+
+	Version:        3.3.2.1
+	Build:          1132
+	Build time:     28.10.2020 21:44:36 UTC
+	Branch          master
+	Commit:         833f72e
+	Commit time:    28.10.2020 21:39:31 UTC
+	JVM:            11.0.8
+	Lavaplayer      1.3.53
+
+2020-10-31 04:28:28.798  INFO 4050 --- [main] lavalink.server.Launcher                 : Starting Launcher on 9dd4f821c52d with PID 4050 (/home/runner/BADEV/Lavalink.jar started by runner in /home/runner/BADEV)
+2020-10-31 04:28:28.845  INFO 4050 --- [main] lavalink.server.Launcher                 : No active profile set, falling back to default profiles: default
+2020-10-31 04:28:31.278  WARN 4050 --- [background-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2020-10-31 04:28:42.142  WARN 4050 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2020-10-31 04:28:42.280  INFO 4050 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2020-10-31 04:28:42.282  INFO 4050 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12616 ms
+2020-10-31 04:28:45.257  WARN 4050 --- [main] l.server.config.SentryConfiguration      : Turning off sentry
+2020-10-31 04:28:48.176  INFO 4050 --- [main] c.s.d.l.tools.GarbageCollectionMonitor   : GC monitoring enabled, reporting results every 2 minutes.
+2020-10-31 04:28:50.245  INFO 4050 --- [main] lavalink.server.config.KoeConfiguration  : OS: Linux, Arch: amd64
+2020-10-31 04:28:50.251  INFO 4050 --- [main] lavalink.server.config.KoeConfiguration  : Enabling JDA-NAS
+2020-10-31 04:28:50.337  INFO 4050 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: loading with filter null
+2020-10-31 04:28:50.384  INFO 4050 --- [main] c.s.l.c.natives.NativeLibraryLoader      : Native library udpqueue: successfully loaded.
+2020-10-31 04:28:53.072  INFO 4050 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-31 04:28:55.940  INFO 4050 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2020-10-31 04:28:56.071  INFO 4050 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2020-10-31 04:28:56.814  INFO 4050 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 2333 (http) with context path ''
+2020-10-31 04:28:56.897  INFO 4050 --- [main] lavalink.server.Launcher                 : Started Launcher in 36.601 seconds (JVM running for 40.736)
+2020-10-31 04:28:56.914  INFO 4050 --- [main] lavalink.server.Launcher                 : You can safely ignore the big red warning about illegal reflection. See https://github.com/Frederikam/Lavalink/issues/295
+2020-10-31 04:30:48.177  WARN 4050 --- [lava-daemon-pool-manager-3-thread-1] c.s.d.l.tools.GarbageCollectionMonitor   : Suspicious GC results for the last 2 minutes: [Bucket 0 = 4] [Bucket 20 = 4] [Bucket 50 = 1] [Bucket 200 = 1] [Bucket 500 = 0] [Bucket 2000 = 0] 

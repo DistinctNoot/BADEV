@@ -1,5 +1,11 @@
-31-Oct-20 04:17:53 AM 72- 3658 -INFO - [NODE-us_east-127.0.0.1:8080] Successfully added to Node Manager
-31-Oct-20 04:17:53 AM 101- 3658 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (1/inf)...
-31-Oct-20 04:17:54 AM 607- 3658 -INFO - [NODE-us_east-127.0.0.1:8080] Successfully established connection
-31-Oct-20 04:18:03 AM 938- 3658 -INFO - 172.18.0.1 - - [31/Oct/2020 04:18:03] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 04:18:12 AM 856- 3658 -INFO - 172.18.0.1 - - [31/Oct/2020 04:18:12] "[37mGET / HTTP/1.1[0m" 200 -
+31-Oct-20 04:28:59 AM 614- 4027 -INFO - [NODE-us_east-127.0.0.1:8080] Successfully added to Node Manager
+31-Oct-20 04:28:59 AM 629- 4027 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (1/inf)...
+31-Oct-20 04:28:59 AM 655- 4027 -INFO - 127.0.0.1 - - [31/Oct/2020 04:28:59] "[37mGET / HTTP/1.1[0m" 200 -
+31-Oct-20 04:28:59 AM 661- 4027 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
+31-Oct-20 04:29:09 AM 664- 4027 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (2/inf)...
+31-Oct-20 04:29:09 AM 669- 4027 -INFO - 127.0.0.1 - - [31/Oct/2020 04:29:09] "[37mGET / HTTP/1.1[0m" 200 -
+31-Oct-20 04:29:09 AM 671- 4027 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
+31-Oct-20 04:29:29 AM 674- 4027 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (3/inf)...
+31-Oct-20 04:29:29 AM 678- 4027 -INFO - 127.0.0.1 - - [31/Oct/2020 04:29:29] "[37mGET / HTTP/1.1[0m" 200 -
+31-Oct-20 04:29:29 AM 680- 4027 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
+31-Oct-20 04:29:59 AM 681- 4027 -WARNING - [NODE-us_east-127.0.0.1:8080] A WebSocket connection could not be established within 3 attempts.

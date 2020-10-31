@@ -8,7 +8,7 @@ def home():
     return render_template('main.html')
 
 def run():
-  app.run(host='0.0.0.0',port=2333)
+  app.run(host='0.0.0.0',port=8080)
 
 def keep_alive():  
     t = Thread(target=run)
