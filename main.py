@@ -5,12 +5,20 @@ import os
 import sys
 import subprocess
 import time
+import json
 from discord.ext import commands
 from keep_alive import keep_alive
 
 sys.dont_write_bytecode = True
 
 intents = discord.Intents.default()
+
+with open('reports.json', encoding='utf-8') as f:
+  try:
+    report = json.load(f)
+  except ValueError:
+    report = {}
+    report['users'] = []
 
 
 client = commands.Bot(command_prefix="bd!", help_command=None, intents=intents.all())
