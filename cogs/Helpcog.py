@@ -13,8 +13,16 @@ class Helpcog(commands.Cog):
 		  category = await helpmod(ctx)
 	  elif(category == "other"):
 		  category = await helpother(ctx)
-	  elif(category == "dev"):
-		  category = await helpdeveloper(ctx)
+	  elif(category == "reg"):
+		  category = await helpreg(ctx)
+	  elif(category == "regular"):
+		  category = await helpreg(ctx)
+	  elif(category == "moderation"):
+		  category = await helpmod(ctx)
+	  elif(category ==  "others"):
+		  category = await helpother(ctx)
+	  elif(category == "music"):
+		  category = await helpmusic(ctx)
 	  else:
 		  await ctx.send("Help page not found.")
   
@@ -48,13 +56,21 @@ async def helpother(ctx):
       em.add_field(name="help", value="I think everyone knows this one", inline=False)
       em.add_field(name="user", value="Check user info!", inline=False)
       em.add_field(name="stats", value="Check how the bot's doing!", inline=False)
+      em.add_field(name="alltag", value="see all our tags")
+      em.add_field(name="addtag", value="Create a tag")
+      em.add_field(name="removetag", value="remove a tag")
+      em.add_field(name="tag", value="See a tag")
       em.set_footer(icon_url=ctx.author.avatar_url, text=f"Requested by {ctx.author.name}")
       await ctx.send(embed=em)
 
-async def helpdeveloper(ctx):
-	em = discord.Embed(title="Developer commands", description="Here are our developer commands", url = "https://tinyurl.com/y4gja7hv", color=0x9E0B0B)
-	em.add_field(name="eval", value="Run code in discord!", inline=False)
-	em.add_field(name="echo", value="print code!", inline=False)
+async def helpmusic(ctx):
+	em = discord.Embed(title="BADEV's Music commands!", description="Our music commands", url="https://github.com/DistinctNoot/BADEV/blob/master/cogs/music.py", color=0x9E0B0B)
+	em.add_field(name="Play", value="Play music")
+	em.add_field(name="Remove", value="Remove music")
+	em.add_field(name="Pause", value="Pause the music")
+	em.add_field(name="Resume", value="Resume the music")
+	em.add_field(name="Skip", value="Skip music")
+	em.add_field(name="Loop", value="Loop music")
 	em.set_footer(icon_url=ctx.author.avatar_url, text=f"Requested by {ctx.author.name}")
 	await ctx.send(embed=em)
 

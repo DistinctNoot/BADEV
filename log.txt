@@ -1,13 +1,8 @@
-31-Oct-20 04:40:42 AM 278- 214 -INFO - 172.18.0.1 - - [31/Oct/2020 04:40:42] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 04:40:42 AM 902- 214 -INFO - [NODE-us_east-127.0.0.1:8080] Successfully added to Node Manager
-31-Oct-20 04:40:42 AM 945- 214 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (1/inf)...
-31-Oct-20 04:40:42 AM 994- 214 -INFO - 127.0.0.1 - - [31/Oct/2020 04:40:42] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 04:40:43 AM 1- 214 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
-31-Oct-20 04:40:53 AM 2- 214 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (2/inf)...
-31-Oct-20 04:40:53 AM 6- 214 -INFO - 127.0.0.1 - - [31/Oct/2020 04:40:53] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 04:40:53 AM 8- 214 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
-31-Oct-20 04:41:13 AM 9- 214 -INFO - [NODE-us_east-127.0.0.1:8080] Attempting to establish WebSocket connection (3/inf)...
-31-Oct-20 04:41:13 AM 14- 214 -INFO - 127.0.0.1 - - [31/Oct/2020 04:41:13] "[37mGET / HTTP/1.1[0m" 200 -
-31-Oct-20 04:41:13 AM 15- 214 -WARNING - [NODE-us_east-127.0.0.1:8080] The remote server returned code 200, the expected code was 101. This usually indicates that the remote server is a webserver and not Lavalink. Check your ports, and try again.
-31-Oct-20 04:41:43 AM 16- 214 -WARNING - [NODE-us_east-127.0.0.1:8080] A WebSocket connection could not be established within 3 attempts.
-31-Oct-20 04:42:23 AM 142- 214 -INFO - 172.18.0.1 - - [31/Oct/2020 04:42:23] "[37mHEAD / HTTP/1.1[0m" 200 -
+09-Nov-20 04:39:56 AM 739- 4207 -INFO - [NODE-us_east-127.0.0.1:7777] Successfully added to Node Manager
+09-Nov-20 04:39:56 AM 776- 4207 -INFO - [NODE-us_east-127.0.0.1:7777] Attempting to establish WebSocket connection (1/inf)...
+09-Nov-20 04:39:57 AM 481- 4207 -INFO - [NODE-us_east-127.0.0.1:7777] Successfully established connection
+09-Nov-20 04:40:15 AM 504- 4207 -INFO - 172.18.0.1 - - [09/Nov/2020 04:40:15] "[37mGET / HTTP/1.1[0m" 200 -
+09-Nov-20 04:40:15 AM 588- 4207 -INFO - 172.18.0.1 - - [09/Nov/2020 04:40:15] "[36mGET /static/stuff.css HTTP/1.1[0m" 304 -
+09-Nov-20 04:45:48 AM 866- 4207 -INFO - 172.18.0.1 - - [09/Nov/2020 04:45:48] "[37mGET / HTTP/1.1[0m" 200 -
+09-Nov-20 04:48:22 AM 209- 4207 -INFO - 172.18.0.1 - - [09/Nov/2020 04:48:22] "[37mHEAD / HTTP/1.1[0m" 200 -
+09-Nov-20 04:52:34 AM 854- 4207 -INFO - 172.18.0.1 - - [09/Nov/2020 04:52:34] "[37mGET / HTTP/1.1[0m" 200 -

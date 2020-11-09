@@ -1,0 +1,17 @@
+body {
+    background-color: darkslategrey;
+}
+
+header {
+    background-color: dimgray;
+    font-variant: normal;
+    font-style: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-indent: left;
+    block-size: auto;
+}
+
+footer {
+    background-color: dimgray;
+    
+}

@@ -2,8 +2,8 @@ import discord
 import contextlib
 import io
 import sys
-import subprocess
 from discord.ext import commands
+
 
 class developer(commands.Cog):
   def __init__(self, client):
@@ -36,11 +36,6 @@ class developer(commands.Cog):
             embed = discord.Embed(title = 'Ran into a error while evaluating...', color=0x9E0B0B)
             embed.add_field(name = 'Error: ', value = e)
             await ctx.send(embed = embed)
-
-  @commands.command()
-  async def run(self, ctx, *, command_string):
-    output = subprocess.getoutput(command_string)
-    await ctx.send(output)
 
 def setup(client):
     client.add_cog(developer(client))
