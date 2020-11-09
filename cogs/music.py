@@ -12,7 +12,7 @@ class Music(commands.Cog):
 
         if not hasattr(client, 'lavalink'):  # This ensures the client isn't overwritten during cog reloads.
             client.lavalink = lavalink.Client(client.user.id)
-            client.lavalink.add_node('127.0.0.1', 8080, 'youshallnotpass', 'us_east', 'default-node')  # Host, Port, Password, Region, Name
+            client.lavalink.add_node('127.0.0.1', 7777, 'youshallnotpass', 'us_east', 'default-node')  # Host, Port, Password, Region, Name
             client.add_listener(client.lavalink.voice_update_handler, 'on_socket_response')
 
         lavalink.add_event_hook(self.track_hook)

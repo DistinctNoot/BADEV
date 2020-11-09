@@ -5,21 +5,12 @@ import os
 import sys
 import subprocess
 import time
-import json
 from discord.ext import commands
 from keep_alive import keep_alive
 
 sys.dont_write_bytecode = True
 
 intents = discord.Intents.default()
-
-with open('reports.json', encoding='utf-8') as f:
-  try:
-    report = json.load(f)
-  except ValueError:
-    report = {}
-    report['users'] = []
-
 
 client = commands.Bot(command_prefix="bd!", help_command=None, intents=intents.all())
 
@@ -54,17 +45,6 @@ async def on_ready():
       print(i)
       testlist.append(i.name)
     print(testlist)
-
-
-
-@client.command()
-@commands.has_role("Bot developer")
-async def unload(ctx):
-	for filename in os.listdir('./cogs'):
-	    if filename.endswith('.py'):
-		    client.unload_extension(f'cogs.{filename[:-3]}')
-		    print(f'unloading {filename}')
-	    await ctx.send(f"Unloaded {filename}")
 
 keep_alive()
 client.run(os.getenv("DISCORD_TOKEN"))

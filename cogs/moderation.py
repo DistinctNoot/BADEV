@@ -120,23 +120,17 @@ class moderation(commands.Cog):
 	@commands.has_guild_permissions(manage_messages=True)
 	async def embed(self, ctx, *, msg):
 		await asyncio.sleep(1)
-		em = discord.Embed(
-		    description="""
-	  {}
-	  
+		em = discord.Embed(description="{}" .format(msg), color=0xff0000)
+		if ctx.message.attachments is not None:
+			attachments = ctx.message.attachments
+			em.set_image(url=attachments[0].url)
+		elif ctx.message.attachments is None:
+			em = discord.Embed(description="{}" .format(msg), color=0xff0000)
+		else:
+			el_em = discord.Embed(description="{}".format(msg))
+			await ctx.send(embed=el_em)
 
-	  
-	  [Join this server for updates](https://discord.gg/v9hgwZV)""".format(msg),
-		    color=0x9E0B0B)
-		await ctx.send(embed=em)
-		await ctx.message.delete()
-
-	@commands.command()
-	async def embedd(self, ctx, msg):
-		await asyncio.sleep(1)
-		em = discord.Embed(description=msg, color=0x9E0B0B)
-		await ctx.send(embed=em)
-
+			
 	@commands.command()
 	async def answer(self, ctx, user: discord.User):
 		channel = await user.create_dm()
@@ -152,6 +146,22 @@ class moderation(commands.Cog):
 		await channel.send(embed=em)
 
 	@commands.command()
+	async def server(self, ctx):
+		guild = ctx.guild
+		em = discord.Embed(
+			title="Information about " + ctx.guild.name,
+			color=0x9E0B0B,
+			timestamp=datetime.datetime.utcnow())
+		em.set_thumbnail(url=ctx.guild.icon_url)
+		em.add_field(name="Created at?", value=guild.created_at.strftime('%a, %#d %B %Y, %I:%M %p'), inline=True)
+		em.add_field(name="Members?", value=guild.member_count)
+		em.add_field(name="Owner?", value=guild.owner)
+		em.add_field(name="Verification level?", value=guild.verification_level)
+		em.add_field(name="Guild id?", value=guild.id)
+		em.set_footer(icon_url=ctx.guild.icon_url, text=f"Requested by {ctx.author.name} at {datetime.datetime.utcnow()}")
+		await ctx.send(embed=em)
+		
+	@commands.command()
 	async def verify(self, ctx):
 		role = discord.utils.get(ctx.guild.roles, id=769429653873360930)
 		role2 = discord.utils.get(ctx.guild.roles, id=771868207408873492)
@@ -162,7 +172,6 @@ class moderation(commands.Cog):
 			await ctx.send("Welcome to the server!")
 			await ctx.author.add_roles(role)
 			await ctx.author.remove_roles(role2)
-
 
 def setup(client):
 	client.add_cog(moderation(client))

@@ -63,6 +63,7 @@ f"""
 	  channel = await self.client.get_channel(745144764575252523)
 	  await channel.send(f"{member.name} was banned.")
 
+
 def setup(client):
     client.add_cog(others(client))
     return

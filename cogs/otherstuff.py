@@ -49,10 +49,30 @@ class otherstuff(commands.Cog):
     elif mode == '*':
       total = num1 * num2
     elif mode == '/':
-      total = num1 / num2
+      total = num1 // num2
     else:
       total = "invalid operation"
     await ctx.send(str(total))
+  
+  @commands.command()
+  async def check(self, ctx, user: discord.User, role):
+    channel = await user.create_dm()
+    fltime = "3 pm BST" #replace with DB later
+    flnumber = "example" #replace with DB later
+    if role.lower() == "pilot":
+      check = discord.Embed(title=f"Flight at {fltime}", description=f"You've been selected to be todays pilot on flight {flnumber}. \n\nIf you are available at {fltime} please use the tick reaction below in the next **20 minutes**, if not please choose the cross!", color=0xff0000)
+      check.set_author(name="BA Staff Team", icon_url="http://logok.org/wp-content/uploads/2014/04/British-Airways-logo-ribbon-logo.png")
+    elif role.lower() == "f/o":
+      check = discord.Embed(title=f"Flight at {fltime}", description=f"You've been selected to be todays first officer on flight {flnumber}. \n\nIf you are available at {fltime} please use the tick reaction below in the next **20 minutes**, if not please choose the cross!", color=0xff0000)
+      check.set_author(name="BA Staff Team", icon_url="http://logok.org/wp-content/uploads/2014/04/British-Airways-logo-ribbon-logo.png")
+    elif role.lower() == "f/a":
+      check = discord.Embed(title=f"Flight at {fltime}", description=f"You've been selected to be todays flight attendant on flight {flnumber}. \n\nIf you are available at {fltime} please use the tick reaction below in the next **20 minutes**, if not please choose the cross!", color=0xff0000)
+      check.set_author(name="BA Staff Team", icon_url="http://logok.org/wp-content/uploads/2014/04/British-Airways-logo-ribbon-logo.png")
+    
+    msg = await channel.send(embed=check)
+    await ctx.send(f"Waiting for {role} to confirm")
+    await msg.add_reaction(str('✅'))
+    await msg.add_reaction(str('❌'))
 
 def setup(client):
     client.add_cog(otherstuff(client))
